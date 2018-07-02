@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="imageShowContainer">
+                <img class="imageArtistShow" src="{{celebrity.image}}" alt="image">
+                <h3>{{celebrity.name}}</h3>
+            </div>
+
+        </div>
+        <div class="col-md-6 pull-left">
+            <blockquote>
+                <h5 class="increaseSize">{{celebrity.catchPhrase}}</h5>
+            </blockquote>
+            <h4>Hobbies:</h4>
+            <ul>
+                {{#each celebrity.hobbies}}
+                <li style="list-style:none;">{{this}}</li>
+                {{/each}}
+            </ul>
+
+            {{#each song}} 
+            <h5>{{this.name}}</h5>
+            <audio style="width:100;" controls>
+                <source src="{{this.preview_url}}" type="audio/mp3">
+            </audio>
+            {{/each}} 
+        </div>
+    </div>
+</div>

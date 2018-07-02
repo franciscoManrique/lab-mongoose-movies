@@ -1,0 +1,46 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* HERO INDEX */
+.hero{
+  background: grey;
+  height: 100vh;;
+}
+
+.card{
+  float: left; 
+  width: calc(25% - 40px); 
+  margin: 10px;
+  padding: 10px 10px;
+}
+
+.imageArtist{
+  margin: 0 auto;
+  display: block;
+  width: 200px; 
+  height: 200px;
+  border-radius: 3px;
+}
+
+h2, h3, card a, .details{
+  text-align: center;
+}
+
+.imageShowContainer img{
+  margin: 0 auto;
+  display: block;
+  width: 400px;
+}
+
+.details{
+  margin: 0 auto;
+}
+input{
+  color: black !important;
+}

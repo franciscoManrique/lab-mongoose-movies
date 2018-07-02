@@ -1,0 +1,17 @@
+<h2>OUR CELEBRITIES</h2>
+
+{{!-- PASAR A PARTIALS --}} {{!-- {{#each celebrities}} {{> celebrityPartial this}} {{/each}} --}} 
+{{#each celebrities}}
+<div class="card">
+    <div>
+        <img class="imageArtist" src="{{this.image}}" alt="image">
+    </div>
+    <h3>{{this.name}}</h3>
+    {{!-- <a href="/celebrities/{{this.id}}" class="details">See details</a> --}}
+
+     <form class="form-inline" action="/celebrities/{{this.id}}/{{this.name}}" method="GET">
+    <button class="btn btn-outline-success details my-2 my-sm-0" name="artist" type="submit">Details</button>
+  </form>
+</div>
+
+{{/each}}
