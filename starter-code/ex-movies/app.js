@@ -25,8 +25,7 @@ app.set("views", path.join(__dirname, "/views"));
 app.set("view engine", "hbs");
 
 //Setup partials
-hbs.registerPartials(path.join(__dirname, "./views/partials"));
-console.log(hbs);
+hbs.registerPartials(path.join(__dirname, "/views/partials"));
 
 //general routes
 app.use("/celebrities", celebritiesRoutes);
